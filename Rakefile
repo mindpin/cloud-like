@@ -1,4 +1,4 @@
 APP_FILE  = 'lib/app.rb'
-APP_CLASS = 'KVService'
+APP_CLASS = 'CloudLike'
 
 require 'sinatra/assetpack/rake'
