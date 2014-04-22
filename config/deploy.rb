@@ -3,9 +3,9 @@ require 'mina/rails'
 require 'mina/git'
 
 set :domain, '106.186.119.248'
-set :deploy_to, '/web/kv_service'
+set :deploy_to, '/web/cloud-like'
 set :current_path, 'current'
-set :repository, 'git://github.com/kaid/kv_service.git'
+set :repository, 'git://github.com/mindpin/cloud-like.git'
 set :branch, 'master'
 set :user, 'root'
 
