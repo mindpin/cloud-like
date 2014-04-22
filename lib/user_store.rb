@@ -9,14 +9,7 @@ class UserStore
   field :name,   type: String
   field :email,  type: String
   field :avatar, type: String
+  field :secret, type: String
 
   has_many :likes
-
-  before_save do
-    self.generate_secret! if !self.secret
-  end
-
-  def generate_secret!
-    self.secret = SecureRandom.hex(16)
-  end
 end

@@ -59,7 +59,7 @@ class CloudLike < Sinatra::Base
     end
 
     def respond_with(&block)
-      store = UserStore.find_by(secret: params[:secret])
+      store = Auth.find_by_secret(params[:secret])
       return 401 if !store
       res MultiJson.dump({
         key:       params[:key],
